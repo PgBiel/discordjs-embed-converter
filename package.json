@@ -1,14 +1,14 @@
 {
-  "name": "discordjs-extract-richembed",
+  "name": "discordjs-embed-converter",
   "version": "1.0.0",
   "description": "Make RichEmbeds from MessageEmbeds, and some other stuff too.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Hello!\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PgBiel/discordjs-extract-richembed.git"
+    "url": "git+https://github.com/PgBiel/discordjs-embed-converter.git"
   },
   "keywords": [
     "discordjs",
@@ -17,7 +17,7 @@
   "author": "PgSuper",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PgBiel/discordjs-extract-richembed/issues"
+    "url": "https://github.com/PgBiel/discordjs-embed-converter/issues"
   },
-  "homepage": "https://github.com/PgBiel/discordjs-extract-richembed#readme"
+  "homepage": "https://github.com/PgBiel/discordjs-embed-converter#readme"
 }
