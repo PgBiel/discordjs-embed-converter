@@ -10,13 +10,13 @@ const mainfunc = function(providedEmbed) {
     if (typeof thing == "object" && !(thing instanceof Array)) {
       result[prop] = {};
       for (const key in thing) {
-        if (key !== "embed") result[prop][key] = thing[key];
+        if (key !== "embed" && key !== "height" && key !== "width") result[prop][key] = thing[key];
       }
     } else if (thing instanceof Array) {
       result[prop] = [];
       thing.map(field=>{
-        const addedField = result[prop].push({});
-        for (const key in field) {
+        const addedField = result[prop][(result[prop].push({})) - 1];
+        for (const key of Object.keys(field)) {
           if (key !== "embed") addedField[key] = field[key];
         }
       });
