@@ -27,4 +27,19 @@ const mainfunc = function(providedEmbed) {
   return Object.assign(new RichEmbed(), result);
 };
 
+mainfunc.RichToMessageEmbed = function(providedEmbed) {
+  if (!(providedEmbed instanceof RichEmbed)) throw new TypeError("Embed must be an instance of the RichEmbed class.");
+  const result = {};
+  for (const prop of Object.values(providedEmbed)) {
+    result[prop] = providedEmbed[prop];
+  }
+  return new MessageEmbed(null, result);
+};
+
+mainfunc.RichToMsgEmbed = mainfunc.RichToMessageEmbed;
+
+mainfunc.MessageEmbedToRich = mainfunc;                            // yay for circulars
+mainfunc.MsgEmbedToRich = mainfunc.MessageEmbedToRich;             // heh
+Object.assign(MessageEmbedToRich, { MsgEmbedToRich: mainfunc });   // don't mind me
+
 module.exports = mainfunc;
