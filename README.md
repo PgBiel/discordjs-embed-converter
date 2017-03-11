@@ -2,7 +2,7 @@
 
 ## Install
 
-`npm install discordjs-embed-converted`
+`npm install discordjs-embed-converter`
 
 ## Usage
 ### MessageEmbed to RichEmbed
