@@ -4,8 +4,8 @@ const { RichEmbed } = Discord;
 
 const mainfunc = function(providedEmbed) {
   if (!(providedEmbed instanceof MessageEmbed)) throw new TypeError("Embed must be an instance of the MessageEmbed class.");
-  let result = {};
-  for (const prop of Object.values(embed)) {
+  const result = {};
+  for (const prop of Object.values(providedEmbed)) {
     let thing = providedEmbed[prop];
     if (typeof thing == "object" && !(thing instanceof Array)) {
       result[prop] = {};
