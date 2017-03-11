@@ -24,7 +24,7 @@ const mainfunc = function(providedEmbed) {
       result[prop] = thing;
     }
   }
-  return Object.assign(new RichEmbed(), result);
+  return new RichEmbed(result);
 };
 
 mainfunc.richToMessageEmbed = function(providedEmbed) {
@@ -37,6 +37,7 @@ mainfunc.richToMessageEmbed = function(providedEmbed) {
 };
 
 mainfunc.richToMsgEmbed = mainfunc.richToMessageEmbed;
+mainfunc.version = "1.1.0";  // version of module
 
 mainfunc.messageEmbedToRich = mainfunc;                                     // yay for circulars
 Object.assign(mainfunc.messageEmbedToRich, { msgEmbedToRich: mainfunc });   // heh
