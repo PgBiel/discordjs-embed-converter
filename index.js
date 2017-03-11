@@ -33,7 +33,7 @@ mainfunc.RichToMessageEmbed = function(providedEmbed) {
   for (const prop of Object.values(providedEmbed)) {
     result[prop] = providedEmbed[prop];
   }
-  return new MessageEmbed(null, result);
+  return new MessageEmbed({client: null}, result);
 };
 
 mainfunc.RichToMsgEmbed = mainfunc.RichToMessageEmbed;
