@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/PgBiel/discordjs-embed-converter.git"
   },
+  "dependencies": {
+    "discord.js": ">=10.0.0"
+  },
   "keywords": [
     "discordjs",
     "richembed"

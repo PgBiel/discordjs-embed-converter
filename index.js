@@ -39,7 +39,7 @@ mainfunc.RichToMessageEmbed = function(providedEmbed) {
 mainfunc.RichToMsgEmbed = mainfunc.RichToMessageEmbed;
 
 mainfunc.MessageEmbedToRich = mainfunc;                            // yay for circulars
-mainfunc.MsgEmbedToRich = mainfunc.MessageEmbedToRich;             // heh
-Object.assign(MessageEmbedToRich, { MsgEmbedToRich: mainfunc });   // don't mind me
+Object.assign(MessageEmbedToRich, { MsgEmbedToRich: mainfunc });   // heh
+mainfunc.MsgEmbedToRich = mainfunc.MessageEmbedToRich;             // don't mind me
 
 module.exports = mainfunc;
